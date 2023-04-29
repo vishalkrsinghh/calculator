@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Alata&family=Baloo+Bhai+2&family=Comic+Neue:wght@700&family=DotGothic16&family=Lobster+Two:ital@1&family=Poppins:wght@300&family=Roboto+Mono&family=Source+Sans+Pro&family=Zen+Dots&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.cjs" defer></script> -->
+    <script src="script.cjs" defer></script>
 </head>
 
 <body>
@@ -42,48 +42,6 @@
         </div>
     </main>
 
-
-    <script>
-        let btn = document.getElementsByClassName("btn");
-        let display = document.getElementsByClassName("display")[0];
-        // console.log(btn);
-        let displayValue = "";
-
-       let clrr = (displayValue) => {
-            displayValue = displayValue.slice(0, displayValue.length - 1);
-            return displayValue;
-        }
-
-        for (let i = 0; i < btn.length; i++) {
-            btn[i].addEventListener("click", () => {
-            
-                if (btn[i].value == "a/c") {
-                    displayValue = "";
-                    display.innerHTML = "";
-                }
-                else if (btn[i].value == "=") {
-                    evaluatee = (displayValue) => {
-                        // console.log(displayValue);
-                        display.innerHTML = eval(displayValue);
-                        // return displayValue;
-                    }
-                    evaluatee(displayValue);
-                    displayValue = eval(displayValue);
-                    // console.log(displayValue);
-                }
-                else if (btn[i].value == "clr") {
-                    // console.log(displayValue);
-                    displayValue = clrr(displayValue);
-                    display.innerHTML = displayValue;
-                }
-                else {
-                    displayValue += btn[i].value;
-                    display.innerHTML = displayValue;
-                }
-            })
-        }
-        console.log(displayValue);
-    </script>
 </body>
 
 </html>
