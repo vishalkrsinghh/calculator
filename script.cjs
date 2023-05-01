@@ -22,7 +22,10 @@ for (let i = 0; i < btn.length; i++) {
                 // return displayValue;
             }
             evaluatee(displayValue);
-            displayValue = eval(displayValue);
+            // displayValue = eval(displayValue);
+            // console.log(typeof displayValue);
+            displayValue = ""+eval(displayValue);
+            // console.log(typeof displayValue);
             // console.log(displayValue);
         }
         else if (btn[i].value == "clr") {
