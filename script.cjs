@@ -1,3 +1,4 @@
+"use strict";
 let btn = document.getElementsByClassName("btn");
 let display = document.getElementsByClassName("display")[0];
 // console.log(btn);
@@ -16,7 +17,7 @@ for (let i = 0; i < btn.length; i++) {
             display.innerHTML = "";
         }
         else if (btn[i].value == "=") {
-            evaluatee = (displayValue) => {
+          let evaluatee = (displayValue) => {
                 // console.log(displayValue);
                 display.innerHTML = eval(displayValue);
                 // return displayValue;
