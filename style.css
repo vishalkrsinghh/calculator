@@ -26,7 +26,7 @@ h1{
 
 .display {
     background-color: rgb(243, 180, 180);
-    height: 45px;
+    height: 60px;
     margin: auto;
     width: 95%;
     box-shadow: 2px 3px 3px -1px black;
@@ -36,6 +36,7 @@ h1{
     overflow-x: scroll;
     overflow-y: hidden;
     font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
 }
 .display::-webkit-scrollbar{
     display: none;
@@ -50,13 +51,23 @@ h1{
     background: antiquewhite;
     
 }
-
+#equal{
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    height: 100%;
+}
 .btn {
     height: 40px;
     width: 40px;
-    font-family: 'DotGothic16', sans-serif;
+    /* font-family: 'DotGothic16', sans-serif; */
+    font-weight: bolder;
 }
-
+#ac{
+    background-color: rgb(253, 72, 72);
+    border: none;
+}
 main {
     display: flex;
     justify-content: center;
